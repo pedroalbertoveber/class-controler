@@ -1,0 +1,17 @@
+<form action="/student/edit" method="POST" class="form-default">
+<input type="hidden" value="{{student.id}}" name="id">
+  <div class="input-container">
+    <label for="name">Nome do aluno</label>
+    <input type="text" name="name" id="name" placeholder="Digite o nome completo do aluno" value="{{student.name}}">
+  </div>
+  <div class="input-container">
+    <label for="age">Idade do aluno</label>
+    <input type="number" name="age" id="age" placeholder="Digite a idade do aluno" value="{{student.age}}">
+  </div>
+  <input type="submit" value="Editar" class="submit-button">
+</form>
+
+<form action="/student/delete" method="POST" class="form-delete">
+  <input type="hidden" value="{{student.id}}" name="id">
+  <input type="submit" value="Excluir Aluno" class="delete-button">
+</form>

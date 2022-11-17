@@ -1,0 +1,15 @@
+<div class="page-title">
+  <h2>Registro de Alunos Novos</h2>
+  <p>Use o formulário abaixo para cadastrar um <strong>novo aluno</strong> nesta sala de aula:</p>
+</div>
+<form action="/students/insertstudent" method="POST" class="form-default">
+  <div class="input-container">
+    <label for="name">Nome do aluno</label>
+    <input type="text" name="name" id="name" placeholder="Digite o nome completo do aluno">
+  </div>
+  <div class="input-container">
+    <label for="age">Idade do aluno</label>
+    <input type="number" name="age" id="age" placeholder="Digite a idade do aluno">
+  </div>
+  <input type="submit" value="Cadastrar Aluno" class="submit-button">
+</form>

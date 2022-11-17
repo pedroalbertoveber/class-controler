@@ -1,0 +1,14 @@
+<div class="page-title">
+  <h2>Confira os alunos da turma:</h2>
+  <p>Cada um destes alunos pode ser editado ou excluído no ícone de <strong>editar</strong>.</p>
+</div>
+
+<section class="students-container">
+  {{#each students}}
+    <div class="student-info">
+      <span>Nome: <strong>{{this.name}}</strong></span>
+      <span>Idade: <strong>{{this.age}}</strong></span>
+      <span><a href="/students/edit/{{this.id}}">Editar</a></span>
+    </div>
+  {{/each}}
+</section>
